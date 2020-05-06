@@ -1,9 +1,11 @@
 version: '2'
 
 services:
-  documents:
+  client:
     container_name: todo-clients
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - '.:/app'
       - '/app/node_modules'

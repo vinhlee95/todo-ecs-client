@@ -7,6 +7,7 @@ class App extends React.Component {
       <div>
         <h1>Hello {this.props.name}</h1>
         <span>@Created by Vinh Le in 2020</span>
+        <button onClick={() => alert('Good job!')}>CLICK ME!!!</button>
       </div>
     );
   }

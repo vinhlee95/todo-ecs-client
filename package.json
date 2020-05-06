@@ -4,20 +4,19 @@
   "description": "Template for a React project using Parcel as bundler",
   "main": "index.js",
   "dependencies": {
-    "express": "4.17.1",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "@babel/core": "7.9.6",
+    "@babel/core": "^7.0.0-0",
     "@babel/preset-env": "7.9.6",
     "parcel-bundler": "1.12.4"
   },
   "scripts": {
-    "start:server": "node server.js",
-    "dev": "parcel public/index.html --port 3009",
+    "dev": "parcel public/index.html --hmr-port 1235",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build src/index.jsx"
+    "build": "parcel build public/index.html --out-dir build/ --public-url ./",
+    "docker:build:dev": "docker build -f Dockerfile.dev ."
   },
   "author": "Vinh Le <lethanhvinh95@gmail.com>",
   "license": "MIT"

@@ -1,6 +1,6 @@
 {
   "name": "react-parcel-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Template for a React project using Parcel as bundler",
   "main": "index.js",
   "dependencies": {

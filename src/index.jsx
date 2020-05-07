@@ -22,7 +22,6 @@ class App extends React.Component {
         <button onClick={() => alert('Good job!' + this.state.name)}>CLICK ME!!!</button>
         <br />
         <span>@Created by Vinh Le in 2020</span>
-        <p>If you like it, please give a 👍</p>
       </div>
     );
   }

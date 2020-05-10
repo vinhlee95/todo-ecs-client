@@ -9,6 +9,7 @@ class App extends React.Component {
     }
   }
   render() {
+    const currentTime = new Date()
     return (
       <div>
         <h1>Hello {this.props.name}</h1>
@@ -22,7 +23,8 @@ class App extends React.Component {
         <button onClick={() => alert('Good job!' + this.state.name)}>CLICK ME!!!</button>
         <br />
         <span>@Created by Vinh Le in 2020</span>
-        <span><i>Updated by Vinh Le on May 9, 2020 at 10PM</i></span>
+        <br />
+        <span><i>Updated by Vinh Le on ${currentTime}</i></span>
       </div>
     );
   }

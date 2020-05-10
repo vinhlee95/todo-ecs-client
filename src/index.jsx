@@ -24,7 +24,7 @@ class App extends React.Component {
         <br />
         <span>@Created by Vinh Le in 2020</span>
         <br />
-        <span><i>Updated by Vinh Le on ${currentTime}</i></span>
+        <span>Updated by Vinh Le on {currentTime.toString()}</span>
       </div>
     );
   }
